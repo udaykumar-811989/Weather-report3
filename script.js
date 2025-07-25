@@ -2,7 +2,7 @@ async function getWeather() {
   const city = document.getElementById("cityInput").value;
   const apiKey = "6fbb889392dc547c0ec2e0b38ce68b34"; // Replace this with your real API key
 
-  const url = "https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric";
+  const url = 'https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metri';
   const proxyUrl = "https://corsproxy.io/?"; // CORS Bypass
 
   try {
@@ -13,7 +13,7 @@ async function getWeather() {
       throw new Error(data.message);
     }
 
-    document.getElementById("weatherResult").innerHTML = "
+    document.getElementById("weatherResult").innerHTML = '
       <strong>${data.name}, ${data.sys.country}</strong><br/>
       🌡️ Temp: ${data.main.temp}°C<br/>
       🌤️ Weather: ${data.weather[0].description}<br/>
