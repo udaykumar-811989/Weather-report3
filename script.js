@@ -1,6 +1,6 @@
 async function getWeather() {
   const city = document.getElementById("cityInput").value;
-  const apiKey = "9645eb134cc6e57e5bb19dc7baedf6bd"; // Replace this with your real API key
+  const apiKey = '6fbb889392dc547c0ec2e0b38ce68b34'; // Replace this with your real API key
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   const proxyUrl = "https://corsproxy.io/?"; // CORS Bypass
